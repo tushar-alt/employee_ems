@@ -10,8 +10,7 @@ moongose.connect("mongodb+srv://tushar:threat_3D%40%23@cluster0.n3oox4e.mongodb.
 
 const EmpSchema={
     name : String,
-    code : String,
-    Location : String,
+    
     
     
 
@@ -26,12 +25,11 @@ app.get("/", function(req, res){
 app.post("/",function(req, res){
 let newNote = new Empl({
     name : req.body.name,
-    code : req.body.code,
-    Location : req.body.location,
+    
 
 });
 newNote.save();
-// res.redirect("/");
+res.redirect("/");
 });
 app.listen(3000 , function () {
     console.log("listening");});
