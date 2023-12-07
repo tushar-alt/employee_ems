@@ -29,7 +29,7 @@ let newNote = new Empl({
 
 });
 newNote.save();
-res.redirect("/");
+//res.redirect("/");
 });
 app.listen(3000 , function () {
     console.log("listening");});
